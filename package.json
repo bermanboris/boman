@@ -1,0 +1,31 @@
+{
+  "name": "boman",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Boman is a Node.js framework used to develop GraphQL applications. ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bermanboris/boman.git"
+  },
+  "keywords": [
+    "Node.js",
+    "GraphQL",
+    "Framework",
+    "Babel",
+    "Decorators"
+  ],
+  "author": "Boris Berman",
+  "bugs": {
+    "url": "https://github.com/bermanboris/boman/issues"
+  },
+  "homepage": "https://github.com/bermanboris/boman#readme",
+  "dependencies": {
+    "apollo-errors": "^1.5.1",
+    "glob": "^7.1.2",
+    "lodash": "^4.17.4"
+  }
+}
