@@ -1,23 +1,19 @@
 {
   "name": "boman",
-  "version": "0.1.0",
-  "main": "index.js",
+  "version": "0.1.11",
+  "main": "./dist/index.js",
   "license": "MIT",
   "description": "Boman is a Node.js framework used to develop GraphQL applications. ",
   "scripts": {
+    "build": "babel lib --out-dir dist",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bermanboris/boman.git"
   },
-  "keywords": [
-    "Node.js",
-    "GraphQL",
-    "Framework",
-    "Babel",
-    "Decorators"
-  ],
+  "keywords": ["Node.js", "GraphQL", "Framework", "Babel", "Decorators"],
   "author": "Boris Berman",
   "bugs": {
     "url": "https://github.com/bermanboris/boman/issues"
@@ -25,7 +21,31 @@
   "homepage": "https://github.com/bermanboris/boman#readme",
   "dependencies": {
     "apollo-errors": "^1.5.1",
+    "apollo-resolvers": "^1.0.3",
+    "apollo-server-express": "^1.2.0",
     "glob": "^7.1.2",
-    "lodash": "^4.17.4"
+    "graphql": "^0.11.7",
+    "graphql-tools": "^2.11.0",
+    "inquirer": "^4.0.1",
+    "inquirer-directory": "^2.1.0",
+    "lodash": "^4.17.4",
+    "merge-graphql-schemas": "^1.4.0",
+    "node-plop": "^0.9.0",
+    "plop": "^1.9.0",
+    "true-case-path": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0"
+  },
+  "peerDependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2"
   }
 }
